@@ -1,5 +1,5 @@
 const request = new XMLHttpRequest();
-const url = "https://bggmsv2icc.execute-api.ap-northeast-1.amazonaws.com/default/AWS_Test";
+const url = "https://b67dcd6aab.execute-api.ap-northeast-1.amazonaws.com/default/AWS_Test";
 
 request.open("GET", url, true);
 request.responseType = "json";
