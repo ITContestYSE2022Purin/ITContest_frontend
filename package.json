@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITContestYSE2022Purin/ITContest_frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ITContestYSE2022Purin/ITContest_frontend/issues"
+  },
+  "homepage": "https://github.com/ITContestYSE2022Purin/ITContest_frontend#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0"
+  }
+}
