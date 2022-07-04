@@ -1,5 +1,10 @@
 export class APITask {
-    static async Get(url) {
+    /**
+     *
+     * @param {string} url
+     * @return {string} body
+     */
+    static async get(url) {
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -7,15 +12,6 @@ export class APITask {
             return;
         }
 
-        const json = await response.json();
-        return new APIResponse(json);
-    }
-}
-
-class APIResponse {
-    body;
-
-    constructor(json) {
-        this.body = json["message"];
+        return await response.json();
     }
 }
