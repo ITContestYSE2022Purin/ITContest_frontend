@@ -12,7 +12,6 @@ export class APITask {
             return;
         }
 
-        const json_promise = await response.json();
-        return JSON.stringify(json_promise);
+        return await response.json();
     }
 }
