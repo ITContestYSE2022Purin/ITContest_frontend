@@ -28,8 +28,11 @@ async function get_book_info_async(isbn) {
     }
 
     const response = await APITask.get(requestURL);
-    console.log(response);
+    const book_info = response["Items"][0];
+    return book_info;
 }
 
+// TODO テストコード
 // いいコード悪いコードのISBN
-get_book_info_async("978-4297127831");
+const book_info = await get_book_info_async("978-4297127831");
+console.log(book_info);
